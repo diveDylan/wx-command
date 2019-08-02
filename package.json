@@ -1,0 +1,25 @@
+{
+  "name": "wx-commander",
+  "version": "1.0.0",
+  "description": "a wx-command project",
+  "bin": {
+    "wx": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diveDylan/wx-command.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diveDylan/wx-command/issues"
+  },
+  "homepage": "https://github.com/diveDylan/wx-command#readme",
+  "dependencies": {
+    "commander": "^2.20.0"
+  }
+}
