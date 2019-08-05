@@ -15,7 +15,6 @@ var fileTypes = ['.js', '.json', '.wxml', '.wxss']
 wxCommander
   .command('create <type>', 'create page or component files')
   .action(function (name, params) {
-    console.log(name, params)
     if (params === 'page') {
       try {
         fileTypes.map(async(i) => { await fs.copyFileSync(`./files/page/index${i}`, `page${i}`) })
