@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a wx-command project",
   "bin": {
-    "wx": "index.js"
+    "wx-command": "./index.js"
   },
   "main": "index.js",
   "scripts": {
