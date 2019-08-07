@@ -28,7 +28,7 @@ wxCommander
     if (params === 'component') {
       try {
         fileTypes.map(async(i) => {
-          var data = new Uint8Array(Buffer.from(files(process.cwd()).page[i]))
+          var data = new Uint8Array(Buffer.from(files(process.cwd()).components[i]))
           fs.writeFileSync(`index.${i}`, data)})
       } catch(err) {
         console.error('what fuck: copy failed')

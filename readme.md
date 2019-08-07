@@ -11,6 +11,6 @@ command + fs.copyFileSync
 3.test package: npm install . -g(maybe need root)
 
 4.usage:
-    1、npm install wx-commander -g
-    2、wx-command create page or component
+    - `npm install wx-commander -g`
+    - `wx-command create page` or component
 
