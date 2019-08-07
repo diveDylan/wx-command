@@ -1,6 +1,8 @@
-
+var files = function(cwd) {
+  var page = {
+    js: `
     /**
-     * /Users/zhongan/Projects/学习/wx-command.js
+     * ${cwd}.js
      */
     Page({
     
@@ -66,4 +68,69 @@
       onShareAppMessage: function () {
     
       }
-    })
+    })`
+  ,
+  wxss: `/**${cwd}.wxss**/`,
+  json: `
+  /** 
+   * ${cwd}.json
+   * */
+  {
+    "usingComponents": {}
+  }`,
+  wxml: `<!--${cwd}.wxml-->
+  <text>${cwd}</text>`
+  }
+  var components = {
+    js: `
+    /**
+     * ${cwd}
+     * /
+Component({
+  /**
+   * 组件的属性列表
+   */
+  properties: {
+
+  },
+
+  /**
+   * 组件的初始数据
+   */
+  data: {
+
+  },
+
+  /**
+   * 组件的方法列表
+   */
+  methods: {
+
+  }
+})
+
+    `,
+   json: `
+   /**
+    * ${cwd}
+    * /
+   {
+    "component": true,
+    "usingComponents": {}
+  }
+   `,
+   wxss: `
+   /**
+   * ${cwd}
+   */
+   `,
+   wxml: `
+   <!--${cwd}-->
+<text>${cwd}</text>
+`
+  }
+  return {
+    page
+  }
+}
+exports = module.exports = files
