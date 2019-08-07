@@ -1,6 +1,6 @@
 {
   "name": "wx-commander",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a wx-command project",
   "bin": {
     "wx-command": "./index.js"

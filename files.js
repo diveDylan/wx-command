@@ -130,7 +130,8 @@ Component({
 `
   }
   return {
-    page
+    page,
+    components
   }
 }
 exports = module.exports = files

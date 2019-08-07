@@ -18,16 +18,18 @@ wxCommander
     if (params === 'page') {
       try {
         fileTypes.map(async(i) => {
-          console.log(i)
           var data = new Uint8Array(Buffer.from(files(process.cwd()).page[i]))
-          fs.writeFileSync(`page.${i}`, data)
+          fs.writeFileSync(`index.${i}`, data)
         })
       } catch(err) {
         console.error('what fuck: copy failed')
       }
-    } else {
+    }
+    if (params === 'component') {
       try {
-        fileTypes.map(async(i) => { await fs.copyFileSync(`./files/component/index${i}`, `component${i}`) })
+        fileTypes.map(async(i) => {
+          var data = new Uint8Array(Buffer.from(files(process.cwd()).page[i]))
+          fs.writeFileSync(`index.${i}`, data)})
       } catch(err) {
         console.error('what fuck: copy failed')
       }
